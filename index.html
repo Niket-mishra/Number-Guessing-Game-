@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="container1">
+        <h1 class="title"><span  class="red"> Number&nbsp;</span> Guessing <span class="green">&nbsp;Game</span></h1>
+        <p class="subtitle">Run Your Brain to Debug the Game</p>
+    </div>
+    <div class="container2">
+        <div class="instbox">
+            <h2 class="title2">Instruction of the Game :</h2>
+            <ul>
+                <li>Guess the Name by moving the slider or Clicking the Circle</li>
+                <li>Color changes to <span class="yellow">Yellow</span> if the guessed number is smaller</li>
+                <li>Color changes to <span class="red1">Red</span> if the guessed number is greater</li>
+                <li>Color changes to <span class="green1">Green</span> if the guessed number is correct.</li>
+                <li>Maximum Attempts allowed is 5</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+       
+        <div class="circle" id="circle">
+            <div class="c" id="1">01</div>
+            <div class="c" id="2">02</div>
+            <div class="c" id="3">03</div>
+            <div class="c" id="4">04</div>
+            <div class="c" id="5">05</div>
+            <div class="c" id="6">06</div>
+            <div class="c" id="7">07</div>
+            <div class="c" id="8">08</div>
+            <div class="c" id="9">09</div>
+            <div class="c" id="10">10</div>
+        </div>
+        <div class="container3">
+            <input type="range" min="1" max="10" oninput="this.nextElementSibling.value = this.value" class="container" id="slider">
+            <p class="attempts" id="a">Number of Attempts Available : 5</p>
+            <p class="res" id="res">
+            </p>
+            <input type="button" value="Restart" class="restart" id="btn" onclick="window.location.href=window.location.href">
+        </div>
+        
+        
+
+</div>
+    <script src="custom.js"></script>
+</body>
+</html>
